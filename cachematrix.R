@@ -40,6 +40,6 @@ cacheSolve <- function(x, ...) {
   # if not cached, then compute the inverse
   data <- x$get()
   inv_x <- solve(data, ...)
-  x$setInverse(inv_x)
+  x$setSolve(inv_x)
   inv_x
 }
